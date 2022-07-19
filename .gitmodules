@@ -1,0 +1,3 @@
+[submodule "Database"]
+	path = Database
+	url = git@ssh.dev.azure.com:v3/datanomiq/DeclarativeDatabaseDevelopment/DeclarativeDatabaseDevelopment

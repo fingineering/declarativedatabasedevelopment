@@ -113,7 +113,7 @@ resource "azuredevops_project" "DeclarativeDatabaseDevelopment" {
   #   description        = "Projekt zum Aufbaut einer Data Logistics "
   version_control    = "Git"
   visibility         = "private"
-  work_item_template = "Agile"
+  work_item_template = "Basic"
 }
 resource "azuredevops_git_repository" "my_database" {
   project_id = azuredevops_project.DeclarativeDatabaseDevelopment.id

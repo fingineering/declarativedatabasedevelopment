@@ -90,7 +90,7 @@ resource "azurerm_mssql_server" "my_sql_server" {
 }
 
 #  // SQL Database
-resource "azurerm_mssql_database" "awadb" {
+resource "azurerm_mssql_database" "demodb" {
   name      = "demo-${var.USERNAME}"
   server_id = azurerm_mssql_server.my_sql_server.id
   collation = "SQL_Latin1_General_CP1_CI_AS"
@@ -100,7 +100,7 @@ resource "azurerm_mssql_database" "awadb" {
   storage_account_type = "Zone"
 }
 
-resource "azurerm_mssql_firewall_rule" "awa-users-laptop" {
+resource "azurerm_mssql_firewall_rule" "db-users-laptop" {
   name             = "${var.USERNAME}-Laptop"
   server_id        = azurerm_mssql_server.my_sql_server.id
   start_ip_address = local.my_ip

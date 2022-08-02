@@ -38,9 +38,14 @@ data "curl" "getIp" {
   uri         = "https://api.ipify.org"
 }
 
+
+locals {
+  shell = fileexists("/bin/bash") ? "/bin/bash" : "powershell.exe"
+  script = fileexists("/bin/bash") ? "az_user.sh": "az_user.ps1"
+}
 data "external" "az_userid" {
   program = [
-    "/bin/bash", "./az_user.sh"
+    local.shell, local.script
   ]
 }
 

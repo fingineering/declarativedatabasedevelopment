@@ -113,13 +113,14 @@ resource "azurerm_mssql_firewall_rule" "db-users-laptop" {
 }
 
 # // Azure DevOps Repository
-resource "azuredevops_project" "DeclarativeDatabaseDevelopment" {
-  name = "DeclarativeDatabaseDevelopment"
-  #   description        = "Projekt zum Aufbaut einer Data Logistics "
-  version_control    = "Git"
-  visibility         = "private"
-  work_item_template = "Basic"
-}
+# resource "azuredevops_project" "DeclarativeDatabaseDevelopment" {
+#   name = "DeclarativeDatabaseDevelopment"
+#   #   description        = "Projekt zum Aufbaut einer Data Logistics "
+#   version_control    = "Git"
+#   visibility         = "private"
+#   work_item_template = "Basic"
+# }
+
 resource "azuredevops_git_repository" "my_database" {
   project_id = azuredevops_project.DeclarativeDatabaseDevelopment.id
   name       = "demo-${var.USERNAME}"

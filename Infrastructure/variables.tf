@@ -8,6 +8,12 @@ variable "DEVOPS_ORG" {
   sensitive = true
 }
 
+variable "DEVOPS_PROJECT" {
+  type = string
+  sensitive = false
+  description = "The Name of the Azure DevOps Project to create the repostory in"
+}
+
 variable "SUBSCRIPTION" {
   type      = string
   sensitive = true

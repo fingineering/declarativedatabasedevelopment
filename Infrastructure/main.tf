@@ -122,7 +122,7 @@ resource "azurerm_mssql_firewall_rule" "db-users-laptop" {
 # }
 
 resource "azuredevops_git_repository" "my_database" {
-  project_id = azuredevops_project.DeclarativeDatabaseDevelopment.id
+  project_id = var.DEVOPS_PROJECT
   name       = "demo-${var.USERNAME}"
   initialization {
     init_type = "Uninitialized"

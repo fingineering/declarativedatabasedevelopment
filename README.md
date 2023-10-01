@@ -2,9 +2,12 @@
 
 # Voraussetzungen
 
-Vor den Start des Trainings sind folgende Voraussetzungen zu erfüllen: Teilnehmer sollten bereits über Grundkenntnisse im Umgang mit Git und mit Terraform verfügen, vertiefte Kenntnisse in SQL werden ebenso voraus gesetzt.
+Vor den Start des Trainings sind folgende Voraussetzungen zu erfüllen:
+Teilnehmer sollten bereits über Grundkenntnisse im Umgang mit Git und mit
+Terraform verfügen, vertiefte Kenntnisse in SQL werden ebenso voraus gesetzt.
 
-Teilnehmer sollten Zugang zu einer Azure DevOps Organisation haben und auf Azure DevOps ein Personal Access Token erzeugt haben.
+Teilnehmer sollten Zugang zu einer Azure DevOps Organisation haben und auf
+Azure DevOps ein Personal Access Token erzeugt haben.
 
 Softwareseitig sollte auf dem Rechner installiert sein:
 
@@ -15,7 +18,9 @@ Softwareseitig sollte auf dem Rechner installiert sein:
 - Wahlweise PowerShell, Bash, Zsh oder ein alternative Unix Terminal
 - ssh
 
-Vor Begin des Workshops sollten Teilnehmer mittels Terraform erfolgreich eine Datenbank auf Azure aufgesetzt haben. Ein passendes Terraform Projekt findet sich im Git Repository.
+Vor Begin des Workshops sollten Teilnehmer mittels Terraform erfolgreich eine
+Datenbank auf Azure aufgesetzt haben. Ein passendes Terraform Projekt findet
+sich im Git Repository.
 
 Zur Einrichtung der Datenbank müssen folgende Schritte durchgeführt werden:
 
@@ -42,6 +47,18 @@ terraform apply
 Beispiel Code und Infrastruktur Script finden sich im folgenden Repository:
 
 [Deklarative Datenbankenentwicklung Git Repository](https://github.com/fingineering/declarativedatabasedevelopment)
+
+# Motivation - warum Datenbanken deklarative entwickeln?
+
+## Databases und DevOps
+
+DevOps wird meist als Methode für die Entwicklung von Anwendungen genutzt,
+DevOps ist aber kein Tool, keine Software oder ein Prozess, um Software zu
+entwickeln. DevOps ist die Summe von Methoden, Mindset und Werkzeugen die ein
+Team aus Entwicklern und Operatoren einsetzt, um den Kundennutzen einer
+Software zu maximieren.
+
+![DevOps Cycle](img/DevOps.png)
 
 # Verwandte Ressourcen
 
